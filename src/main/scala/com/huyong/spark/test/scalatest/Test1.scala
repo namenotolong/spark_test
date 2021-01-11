@@ -13,5 +13,14 @@ object Test1 {
       case x @ Student(name, age) => println(s"$name is $age $x")
       case _ => println("none")
     }
+    val num = test ({
+      case 1 => "one"
+      case 2 => "two"
+      case _ => "zero"
+    } ,1)
+    println(num)
+  }
+  def test(func : PartialFunction[Int, String], num : Int): String = {
+    func(num)
   }
 }
