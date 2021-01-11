@@ -37,6 +37,7 @@
 # *.ipr
 
 */target
+target
 */*/target
 
 */metastore_db
